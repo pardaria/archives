@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema - Underland</title>
+    <link rel="shortcut icon" href="https://pbs.twimg.com/media/GNlvY34WEAARzHQ.jpg"/>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        
+        .red-text {
+            color: red;
+        }
+        
+        .cadet-blue {
+            color: #5F9EA0;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .back-button:hover {
+            background-color: #6B0000;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .flicker-text {
+            animation: flicker 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://s2-techtudo.glbimg.com/aD6cjprSQeTO1lEVxHUMf9-ZiJk=/0x0:695x521/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/n/z/pkDKMoRPaBQxGxnQrzAw/2014-12-22-burnin2.jpg" alt="Sistema">
+        
+        <p class="flicker-text">O Sistema é absoluto<br><span class="red-text">The system is absolute</span></p>
+        
+        <p class="flicker-text">O Sistema te recompensa se cumprir os requerimentos<br><span class="red-text">The System rewards you if you meet the requirements</span></p>
+        
+        <p class="flicker-text">Se descumprir, o sistema te pune<br><span class="red-text">can be cruel</span></p>
+        
+        <p class="flicker-text">O Sistema usa a cor <span class="cadet-blue">'CadetBlue'</span><br>e o nick "SISTEMA"</p>
+        
+        <a href="index.html" class="back-button">Voltar ao Chat</a>
+    </div>
+</body>
+</html>

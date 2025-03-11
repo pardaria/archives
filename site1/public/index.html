@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underland</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://pbs.twimg.com/media/GNlvY34WEAARzHQ.jpg"/>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+        <div class="sidebar-left" id="sidebar-left">
+            <img src="https://pbs.twimg.com/media/GNlvY34WEAARzHQ.jpg" class="channel-logo">
+            <br><br><a href="sistema.html"><b>- [SISTEMA]</b></a><br>
+            <a href="reunioes.html"><b>- [REUNIOES]</b></a><br><br>
+            <div class="channel" data-channel="Chat">Chat</div>
+            <div class="channel" data-channel="Update">Update</div>
+            <div class="channel" data-channel="Reuniao">Reunião</div>
+            <div class="channel" data-channel="Provas">Provas</div>
+            <div class="channel" data-channel="Sistema">Sistema</div>
+            <div class="channel" data-channel="696">Caso 696</div>
+            <pre> <font color="white">Chat -</font><font color="orange"> Command and Control </font><br><br> <font color="white">Update -</font><font color="orange"> Admin traz informações privadas aqui. </font><br><br> <font color="white">Reunião -</font><font color="orange"> Hora, data, e link das reuniões aqui. </font><br><br> <font color="white">Provas -</font><font color="orange"> Upem no transfernow.net, e mandem com senha. </font><br><br> <font color="white">Casos -</font><font color="orange"> Chat focado em casos específicos. </font></pre>
+        </div>
+
+        <div class="chat-window">
+            <div class="chat-header" id="chat-header">
+                <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+                <span id="channel-title">Chat</span>
+                <button id="users-toggle" class="users-toggle"><i class="fas fa-users"></i></button>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input">
+                <div class="input-row">
+                    <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                    <button id="send-button">Enviar</button>
+                </div>
+                <div class="button-row">
+                    <div class="file-input-container">
+                        <label for="file-input" class="file-input-label">Escolher Arquivo</label>
+                        <input type="file" id="file-input" accept="image/*, video/*, audio/*">
+                    </div>
+                    <button id="send-file-button">Enviar Arquivo</button>
+                    <button id="change-nick">Alterar Nick</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-right" id="sidebar-right">
+            <div class="online-users-header">Online</div>
+            <div class="online-users" id="online-users"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
